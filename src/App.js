@@ -28,6 +28,7 @@ import Proptypes from './components/Basic/PropTypes';
 
 
 function App() {
+  console.log('nantha da gta vignesh!');
   return (
     <div className="App">
 
