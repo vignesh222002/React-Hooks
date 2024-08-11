@@ -1,10 +1,29 @@
+import { forwardRef, useImperativeHandle, useRef } from "react"
 
 
-export default function ForwardRefChild () {
+const ForwardRefChild = forwardRef(({}, ref) => {
+    const inputRef = useRef()
+
+    useImperativeHandle(ref, () => {
+        return {
+            console: () => {
+                console.log("Consoled")
+            },
+            focusInput: () => {
+                inputRef.current.focus()
+            }
+        }
+    }, [])
 
     return (
-        <div>
+        <div
+            ref={ref} 
+            style={{ border: '1px solid red', padding: "20px", margin: '20px' }}
+        >
             <h1>Child Ref</h1>
+            <input ref={inputRef} type="text" placeholder="text" />
         </div>
     )
-}
+})
+
+export default ForwardRefChild;

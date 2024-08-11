@@ -25,6 +25,7 @@ import ChangeCounter from './components/CustomHooks/ChangeCounter';
 import ChangeInputForm from './components/CustomHooks/ChangeInputForm';
 import FormEvents from './components/Basic/FormEvents';
 import Proptypes from './components/Basic/PropTypes';
+import ForwardRefParent from './components/Refs/parent';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
       {/* <ChangeCounter /> */}
       {/* <ChangeTitle /> */}
       {/* <CounterTwo /> */}
-      <CounterOne />
+      {/* <CounterOne /> */}
       {/* <ComponentA /> */}
       {/* <UseMemo /> */}
       {/* <Parent /> */}
@@ -57,6 +58,8 @@ function App() {
       {/* <Greet name="Vignesh" surName="perumal" /> */}
       {/* <Welcome name="Vignesh" surName="Wara" /> */}
       {/* <Gallery /> */}
+
+      <ForwardRefParent />
     </div>
   );
 }
