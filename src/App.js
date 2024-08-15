@@ -26,6 +26,7 @@ import ChangeInputForm from './components/CustomHooks/ChangeInputForm';
 import FormEvents from './components/Basic/FormEvents';
 import Proptypes from './components/Basic/PropTypes';
 import ForwardRefParent from './components/Refs/parent';
+import UseTransitionHook from './components/AdvancedHooks/useTransition/useTransition';
 
 
 function App() {
@@ -59,7 +60,8 @@ function App() {
       {/* <Welcome name="Vignesh" surName="Wara" /> */}
       {/* <Gallery /> */}
 
-      <ForwardRefParent />
+      {/* <ForwardRefParent /> */}
+      <UseTransitionHook />
     </div>
   );
 }
