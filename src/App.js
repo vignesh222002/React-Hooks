@@ -27,6 +27,7 @@ import FormEvents from './components/Basic/FormEvents';
 import Proptypes from './components/Basic/PropTypes';
 import ForwardRefParent from './components/Refs/parent';
 import UseTransitionHook from './components/AdvancedHooks/useTransition/useTransition';
+import ParentOfContextAPI from './components/Context/ContextAPI/parent';
 
 
 function App() {
@@ -61,7 +62,8 @@ function App() {
       {/* <Gallery /> */}
 
       {/* <ForwardRefParent /> */}
-      <UseTransitionHook />
+      {/* <UseTransitionHook /> */}
+      <ParentOfContextAPI />
     </div>
   );
 }
